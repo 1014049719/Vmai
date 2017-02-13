@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WangjiMiMaViewController">
+            <connections>
+                <outlet property="ToubuLabel" destination="MtT-32-DO5" id="dnl-vZ-tKe"/>
+                <outlet property="backBtn" destination="uFq-r8-GlV" id="Vv1-Z2-5E3"/>
+                <outlet property="bk1" destination="QUD-sl-qvX" id="dZH-aj-u4n"/>
+                <outlet property="bk2" destination="anJ-7q-5DQ" id="5ft-Xv-eJT"/>
+                <outlet property="bk3" destination="ikz-GW-4pb" id="Rgt-9y-H2o"/>
+                <outlet property="bk4" destination="6ie-ev-eEo" id="MBo-fp-hed"/>
+                <outlet property="bk5" destination="iJm-dd-WYK" id="QA9-DR-SZj"/>
+                <outlet property="enterBtn" destination="LyP-Lf-mIf" id="08v-ko-dNS"/>
+                <outlet property="image1" destination="lke-tI-bT1" id="MiG-4D-9SH"/>
+                <outlet property="image2" destination="EQa-Hn-UKs" id="mbR-AI-KMj"/>
+                <outlet property="image3" destination="Y8b-3u-EtT" id="3jR-UZ-agg"/>
+                <outlet property="image4" destination="aCu-NZ-y9K" id="J2r-az-ydT"/>
+                <outlet property="image5" destination="E2k-od-zRG" id="ASq-Rq-H8f"/>
+                <outlet property="textField1" destination="d6o-le-w6N" id="fuk-uZ-IcQ"/>
+                <outlet property="textField2" destination="Vr2-o1-JfQ" id="er3-nq-mDX"/>
+                <outlet property="textField3" destination="TFs-aL-M9h" id="WtC-jq-ijW"/>
+                <outlet property="textField4" destination="chu-wA-lmK" id="axP-tj-EOr"/>
+                <outlet property="textField5" destination="w4A-Ne-vIT" id="fn6-Ju-1Te"/>
+                <outlet property="toubuLanseView" destination="xGB-Ik-U7o" id="koL-m9-Osj"/>
+                <outlet property="tubiao" destination="aOp-9M-QrV" id="Wb4-7w-7B2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yanzhengmaBtn" destination="0X6-f8-yhG" id="ZPK-2I-QTw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输入框背景蓝边.png" id="QUD-sl-qvX">
+                    <rect key="frame" x="37" y="106" width="240" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="联系人.png" id="lke-tI-bT1">
+                    <rect key="frame" x="45" y="110" width="26" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名(4-20位,不能为汉字)" minimumFontSize="17" clearButtonMode="whileEditing" id="d6o-le-w6N">
+                    <rect key="frame" x="81" y="108" width="188" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFieldEnd:" destination="-1" eventType="editingDidEndOnExit" id="JAF-ED-Q0o"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输入框背景蓝边.png" id="anJ-7q-5DQ">
+                    <rect key="frame" x="37" y="145" width="240" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="密码.png" id="EQa-Hn-UKs">
+                    <rect key="frame" x="45" y="148" width="26" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="新密码(6-20位)" minimumFontSize="17" clearButtonMode="whileEditing" id="Vr2-o1-JfQ">
+                    <rect key="frame" x="81" y="149" width="188" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFieldEnd:" destination="-1" eventType="editingDidEndOnExit" id="ORO-Oe-KIm"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输入框背景蓝边.png" id="ikz-GW-4pb">
+                    <rect key="frame" x="37" y="184" width="240" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="密码.png" id="Y8b-3u-EtT">
+                    <rect key="frame" x="45" y="189" width="26" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="确认密码" minimumFontSize="17" clearButtonMode="whileEditing" id="TFs-aL-M9h">
+                    <rect key="frame" x="81" y="187" width="188" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFieldEnd:" destination="-1" eventType="editingDidEndOnExit" id="reb-LX-mZ1"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输入框背景蓝边.png" id="6ie-ev-eEo">
+                    <rect key="frame" x="37" y="223" width="240" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="手机.png" id="aCu-NZ-y9K">
+                    <rect key="frame" x="45" y="228" width="26" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" minimumFontSize="17" clearButtonMode="whileEditing" id="chu-wA-lmK">
+                    <rect key="frame" x="81" y="226" width="188" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFieldEnd:" destination="-1" eventType="editingDidEndOnExit" id="UwR-dA-osE"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输入框背景蓝边.png" id="iJm-dd-WYK">
+                    <rect key="frame" x="37" y="263" width="240" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="手机.png" id="E2k-od-zRG">
+                    <rect key="frame" x="45" y="268" width="26" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" minimumFontSize="17" clearButtonMode="whileEditing" id="w4A-Ne-vIT">
+                    <rect key="frame" x="81" y="266" width="188" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFieldEnd:" destination="-1" eventType="editingDidEndOnExit" id="Spb-F5-7h2"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LyP-Lf-mIf">
+                    <rect key="frame" x="37" y="341" width="240" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="确认" backgroundImage="登录背景蓝.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="enterBtnClick:" destination="-1" eventType="touchUpInside" id="niK-RA-JEI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0X6-f8-yhG">
+                    <rect key="frame" x="200" y="224" width="77" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="验证码" backgroundImage="验证码按钮蓝.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="yanzhengmaBtnClick:" destination="-1" eventType="touchUpInside" id="hjc-GT-zIX"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="xGB-Ik-U7o" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页头部logo.png" id="aOp-9M-QrV">
+                            <rect key="frame" x="247" y="20" width="65" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uFq-r8-GlV">
+                            <rect key="frame" x="8" y="13" width="72" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="10" maxX="40" maxY="10"/>
+                            <inset key="imageEdgeInsets" minX="3" minY="20" maxX="40" maxY="0.0"/>
+                            <state key="normal" image="返回.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnClick:" destination="-1" eventType="touchUpInside" id="MRh-iH-ztQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="忘记密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MtT-32-DO5">
+                            <rect key="frame" x="110" y="33" width="101" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0078431372550000003" green="0.54117647059999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="textFieldEnd:" destination="-1" eventType="touchDown" id="Ex2-AM-Th0"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <action selector="textFieldEnd:" destination="-1" eventType="touchDown" id="bEy-rF-6ct"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="密码.png" width="75" height="75"/>
+        <image name="手机.png" width="76" height="76"/>
+        <image name="登录背景蓝.png" width="773" height="146"/>
+        <image name="联系人.png" width="75" height="76"/>
+        <image name="输入框背景蓝边.png" width="773" height="147"/>
+        <image name="返回.png" width="94" height="94"/>
+        <image name="首页头部logo.png" width="196" height="160"/>
+        <image name="验证码按钮蓝.png" width="255" height="138"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
