@@ -76,6 +76,8 @@
     //搜索数据源
     NSMutableArray *_dataMutableArr;
     
+    //--------------
+    
     //最终拼接好的通讯录字符串
     NSMutableString *_mutableStr;
 }
