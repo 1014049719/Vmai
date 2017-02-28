@@ -78,6 +78,8 @@
     //搜索数据源
     NSMutableArray *_dataMutableArr;
     
+    //--------------用托管gitlab托管-----
+    
     //最终拼接好的通讯录字符串
     NSMutableString *_mutableStr;
 }
