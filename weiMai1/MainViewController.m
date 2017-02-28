@@ -42,6 +42,8 @@
     //搜索列表显示开关
     BOOL isSousuo;
     
+    //master分支变更-----
+    
     //提示框
     UIAlertView *_alterView;
     
